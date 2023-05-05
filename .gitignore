@@ -10,3 +10,13 @@ terraform.tfstate*
 *.auto.tfvars*
 terraform.tfvars*
 !terraform.tfvars.example
+
+# Ignore Terragrunt state and top terragrunt.hcl
+.terragrunt-cache
+terragrunt.hcl
+!cluster/terragrunt.hcl
+!foundations/terragrunt.hcl
+
+# Ignore generated files
+generated/*
+!generated/.gitkeep

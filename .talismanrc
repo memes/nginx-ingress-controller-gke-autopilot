@@ -8,3 +8,11 @@ fileignoreconfig:
   checksum: 1a73442a316535a2e8a67a401aef15943f73ab0e405577f6f405e81400a12d57
 - filename: .github/workflows/pre-commit.yml
   checksum: d973823a6d233c44075ad96c2f92e2d2522b3c5767ef6e8376f0731e8a55ab38
+- filename: foundations/README.md
+  checksum: 2ff2526287e0ba0882e4453a56f4212c01c1b123db648a0715b5a44ba1b1bedc
+- filename: cluster/variables.tf
+  checksum: 6e3951ac95a106c67775cd1471b5b181ad6d440a100557a2f7d66fd235575a56
+- filename: foundations/variables.tf
+  checksum: 42bcad5bcd4ca3a3072cfc976fd90f448e0453e18c694e1c99d039aa957c3f6a
+- filename: cluster/README.md
+  checksum: 949d1ad34f6e3b749d5465657a272b027d1f48a9c4158f802c8179c11685cf85

@@ -1,0 +1,32 @@
+# The GCP project identifier to use
+project_id  = "my-gcp-project"
+
+# The name to apply to resources
+name = "my-cluster"
+
+# The qualified artifact registry repo
+repo = "us-west1.docker.pkg.dev/my-gcp-project/my-repo"
+
+# The subnet definition to use: must contain a subnet self-link, the names of
+# the secondary ranges for pods and services, and a non-conflicting CIDR to use
+# for master nodes.
+subnet = {
+    self_link = "https://www.googleapis.com/compute/v1/projects/my-gcp-project/regions/us-west1/subnetworks/my-subnet"
+}
+
+# A list of CIDRs that can access the master nodes
+master_authorized_networks = [
+    {
+        cidr_block = "172.16.0.0/16"
+        display_name = "via bastion"
+    }
+]
+
+# Optional labels to add to resources
+labels = {
+    "owner" = "tester-name"
+}
+
+# Optional: override the default path where the generated kubeconfig will be
+# written
+kubeconfig_path = "~/tmp/kubeconfig"
