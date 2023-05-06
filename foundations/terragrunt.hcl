@@ -9,7 +9,7 @@ terraform {
 
 inputs = {
   project_id = include.root.inputs.project_id
-  name = include.root.inputs.name
-  region    = include.root.inputs.region
-  labels = include.root.inputs.labels
+  name       = include.root.inputs.name
+  region     = include.root.inputs.region
+  labels     = include.root.inputs.labels
 }

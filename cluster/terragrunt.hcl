@@ -19,18 +19,18 @@ dependency "foundations" {
 
 inputs = {
   project_id = include.root.inputs.project_id
-  name = include.root.inputs.name
-  labels = include.root.inputs.labels
-  repo = dependency.foundations.outputs.repo
+  name       = include.root.inputs.name
+  labels     = include.root.inputs.labels
+  repo       = dependency.foundations.outputs.repo
   subnet = {
-    self_link = dependency.foundations.outputs.subnet.self_link
-    pods_range_name = dependency.foundations.outputs.subnet.pods_range_name
+    self_link           = dependency.foundations.outputs.subnet.self_link
+    pods_range_name     = dependency.foundations.outputs.subnet.pods_range_name
     services_range_name = dependency.foundations.outputs.subnet.services_range_name
-    master_cidr = "192.168.0.0/28"
+    master_cidr         = "192.168.0.0/28"
   }
   master_authorized_networks = [
     {
-      cidr_block = format("%s/32", dependency.foundations.outputs.bastion_ip_address)
+      cidr_block   = format("%s/32", dependency.foundations.outputs.bastion_ip_address)
       display_name = "Bastion access to masters"
     },
   ]
