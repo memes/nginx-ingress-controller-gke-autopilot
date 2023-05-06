@@ -16,6 +16,7 @@ terraform.tfvars*
 terragrunt.hcl
 !cluster/terragrunt.hcl
 !foundations/terragrunt.hcl
+!kustomization/terragrunt.hcl
 
 # Ignore generated files
 generated/*
