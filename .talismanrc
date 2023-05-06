@@ -16,3 +16,7 @@ fileignoreconfig:
   checksum: 42bcad5bcd4ca3a3072cfc976fd90f448e0453e18c694e1c99d039aa957c3f6a
 - filename: cluster/README.md
   checksum: 949d1ad34f6e3b749d5465657a272b027d1f48a9c4158f802c8179c11685cf85
+- filename: kustomization/README.md
+  checksum: 732a3e810f80b84a8199e07a3170ac5b04cb5f2d6b02d951771c4d3beb8fc622
+- filename: kustomization/variables.tf
+  checksum: f64993c40820fbfcd2ec7257e1706ca36ef7fbef9ff31e0678b53bdfc8eabb0a

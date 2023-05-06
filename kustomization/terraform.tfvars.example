@@ -1,0 +1,7 @@
+# The Google Artifact Registry repo to use as source of NGINX OSS/NGINX+ Ingress
+# controller images
+repo = "us-west1-docker.pkg.dev/my-project/my-repo"
+
+# Optional: override the default path where the generated kustomize yaml files
+# will be written
+kustomization_path = "~/tmp/"

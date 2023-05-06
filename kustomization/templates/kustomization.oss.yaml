@@ -1,0 +1,12 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../../overlays/oss
+
+images:
+  - name: nginx/nginx-ingress
+    newName: ${repo}/nginx-ingress
+    newTag: 3.1.1
+
+commonAnnotations: ${jsonencode(annotations)}
