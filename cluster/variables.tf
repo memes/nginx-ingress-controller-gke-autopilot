@@ -23,10 +23,10 @@ variable "name" {
 
 variable "repo" {
   type = string
-  # validation {
-  #   condition     = can(regex("^[a-z]{2,}(?:-[a-z]+[1-9])?-docker.pkg.dev/[^/]+/[^/]+)", var.repo))
-  #   error_message = "The repo value must be a valid arifact repository."
-  # }
+  validation {
+    condition     = can(regex("^[a-z]{2,}(?:-[a-z]+[1-9])?-docker.pkg.dev/[^/]+/[^/]+", var.repo))
+    error_message = "The repo value must be a valid arifact repository."
+  }
   description = <<-EOD
   The generated service account will be given read-only access role to the repo.
   EOD
