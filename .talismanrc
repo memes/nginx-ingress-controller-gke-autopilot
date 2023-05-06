@@ -20,3 +20,5 @@ fileignoreconfig:
   checksum: 732a3e810f80b84a8199e07a3170ac5b04cb5f2d6b02d951771c4d3beb8fc622
 - filename: kustomization/variables.tf
   checksum: f64993c40820fbfcd2ec7257e1706ca36ef7fbef9ff31e0678b53bdfc8eabb0a
+- filename: README.md
+  checksum: 89568786c76bde542e00061db46630bcde2123e5a3ca57537640e264de091d8b

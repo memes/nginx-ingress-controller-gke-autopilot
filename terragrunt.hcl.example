@@ -1,0 +1,14 @@
+inputs = {
+  name       = "my-cluster"
+  project_id = "my-project"
+  region     = "us-west1"
+  labels = {
+    "email" = "m_dot_emes_at_f5_dot_com"
+    "owner" = "emes"
+  }
+  annotations = {
+    "matthewemes.com/source" = "github.com/memes/nginx-ingress-controller-gke-autopilot"
+    "matthewmes.com/email"   = "m_dot_emes_at_f5_dot_com"
+    "matthewemes.com/owner"  = "emes"
+  }
+}
