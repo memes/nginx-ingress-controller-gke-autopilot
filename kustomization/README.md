@@ -23,7 +23,7 @@ kustomization_path = "~/tmp/"
 ```
 
 <!-- markdownlint-disable no-inline-html no-bare-urls -->
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
@@ -47,11 +47,11 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_repo"></a> [repo](#input\_repo) | The generated service account will be given read-only access role to the repo. | `string` | n/a | yes |
-| <a name="input_annotations"></a> [annotations](#input\_annotations) | An optional set of key:value string pairs that will be added generated resources<br>that accept kubernetes style annotations. | `map(string)` | `{}` | no |
-| <a name="input_kustomization_path"></a> [kustomization\_path](#input\_kustomization\_path) | The path that will be used for a generated kustomizations; if left blank (default)<br>the kustomization files will be written to '../generated/'. | `string` | `""` | no |
+| <a name="input_annotations"></a> [annotations](#input\_annotations) | An optional set of key:value string pairs that will be added generated resources<br/>that accept kubernetes style annotations. | `map(string)` | `{}` | no |
+| <a name="input_kustomization_path"></a> [kustomization\_path](#input\_kustomization\_path) | The path that will be used for a generated kustomizations; if left blank (default)<br/>the kustomization files will be written to '../generated/'. | `string` | `""` | no |
 
 ## Outputs
 
 No outputs.
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- END_TF_DOCS -->
 <!-- markdownlint-enable no-inline-html no-bare-urls -->
