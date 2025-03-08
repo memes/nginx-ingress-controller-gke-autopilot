@@ -15,9 +15,9 @@ fileignoreconfig:
 - filename: foundations/variables.tf
   checksum: 42bcad5bcd4ca3a3072cfc976fd90f448e0453e18c694e1c99d039aa957c3f6a
 - filename: cluster/README.md
-  checksum: 949d1ad34f6e3b749d5465657a272b027d1f48a9c4158f802c8179c11685cf85
+  checksum: 692570efc209aa0e60d60d22dbf0a043a2c2dc3d2731547f2f1f95fe9b976021
 - filename: kustomization/README.md
-  checksum: 732a3e810f80b84a8199e07a3170ac5b04cb5f2d6b02d951771c4d3beb8fc622
+  checksum: c56d7695216542d5c7752925d434c0d7363aaba6184ea5e9677a7b55767d3f75
 - filename: kustomization/variables.tf
   checksum: f64993c40820fbfcd2ec7257e1706ca36ef7fbef9ff31e0678b53bdfc8eabb0a
 - filename: README.md

@@ -49,7 +49,7 @@ kubeconfig_path = "~/tmp/kubeconfig"
 ```
 
 <!-- markdownlint-disable no-inline-html no-bare-urls -->
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
@@ -76,16 +76,16 @@ kubeconfig_path = "~/tmp/kubeconfig"
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_master_authorized_networks"></a> [master\_authorized\_networks](#input\_master\_authorized\_networks) | A set of CIDRs that are permitted to reach the kubernetes API endpoints. | <pre>list(object({<br>    cidr_block   = string<br>    display_name = string<br>  }))</pre> | n/a | yes |
-| <a name="input_name"></a> [name](#input\_name) | The name to use when naming resources managed by this module. Must be RFC1035<br>compliant and between 1 and 63 characters in length, inclusive. | `string` | n/a | yes |
+| <a name="input_master_authorized_networks"></a> [master\_authorized\_networks](#input\_master\_authorized\_networks) | A set of CIDRs that are permitted to reach the kubernetes API endpoints. | <pre>list(object({<br/>    cidr_block   = string<br/>    display_name = string<br/>  }))</pre> | n/a | yes |
+| <a name="input_name"></a> [name](#input\_name) | The name to use when naming resources managed by this module. Must be RFC1035<br/>compliant and between 1 and 63 characters in length, inclusive. | `string` | n/a | yes |
 | <a name="input_project_id"></a> [project\_id](#input\_project\_id) | The GCP project identifier where the Autopilot GKE cluster will be created. | `string` | n/a | yes |
 | <a name="input_repo"></a> [repo](#input\_repo) | The generated service account will be given read-only access role to the repo. | `string` | n/a | yes |
-| <a name="input_subnet"></a> [subnet](#input\_subnet) | Provides the subnet self\_link to which the cluster will be attached, the<br>*names* of the secondary ranges to use for pods and services, and the CIDR to<br>use for masters. | <pre>object({<br>    self_link           = string<br>    pods_range_name     = string<br>    services_range_name = string<br>    master_cidr         = string<br>  })</pre> | n/a | yes |
-| <a name="input_kubeconfig_path"></a> [kubeconfig\_path](#input\_kubeconfig\_path) | The path that will be used for a generated kubeconfig; if left blank (default)<br>the kubeconfig will be written to '../generated/kubeconfig'. | `string` | `""` | no |
-| <a name="input_labels"></a> [labels](#input\_labels) | An optional set of key:value string pairs that will be added to the Autopilot<br>resources. | `map(string)` | `{}` | no |
+| <a name="input_subnet"></a> [subnet](#input\_subnet) | Provides the subnet self\_link to which the cluster will be attached, the<br/>*names* of the secondary ranges to use for pods and services, and the CIDR to<br/>use for masters. | <pre>object({<br/>    self_link           = string<br/>    pods_range_name     = string<br/>    services_range_name = string<br/>    master_cidr         = string<br/>  })</pre> | n/a | yes |
+| <a name="input_kubeconfig_path"></a> [kubeconfig\_path](#input\_kubeconfig\_path) | The path that will be used for a generated kubeconfig; if left blank (default)<br/>the kubeconfig will be written to '../generated/kubeconfig'. | `string` | `""` | no |
+| <a name="input_labels"></a> [labels](#input\_labels) | An optional set of key:value string pairs that will be added to the Autopilot<br/>resources. | `map(string)` | `{}` | no |
 
 ## Outputs
 
 No outputs.
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- END_TF_DOCS -->
 <!-- markdownlint-enable no-inline-html no-bare-urls -->

@@ -29,7 +29,7 @@ labels = {
 ```
 
 <!-- markdownlint-disable no-inline-html no-bare-urls -->
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
@@ -59,7 +59,7 @@ labels = {
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_name"></a> [name](#input\_name) | The name to use when naming resources managed by this module. Must be RFC1035<br>compliant and between 1 and 63 characters in length, inclusive. | `string` | n/a | yes |
+| <a name="input_name"></a> [name](#input\_name) | The name to use when naming resources managed by this module. Must be RFC1035<br/>compliant and between 1 and 63 characters in length, inclusive. | `string` | n/a | yes |
 | <a name="input_project_id"></a> [project\_id](#input\_project\_id) | The GCP project identifier where the foundational resources will be created. | `string` | n/a | yes |
 | <a name="input_region"></a> [region](#input\_region) | The Compute Engine regions in which to create the foundation resources. | `string` | n/a | yes |
 | <a name="input_labels"></a> [labels](#input\_labels) | An optional set of key:value string pairs that will be added to the GCP resources. | `map(string)` | `{}` | no |
@@ -72,5 +72,5 @@ labels = {
 | <a name="output_repo"></a> [repo](#output\_repo) | n/a |
 | <a name="output_subnet"></a> [subnet](#output\_subnet) | n/a |
 | <a name="output_tunnel_command"></a> [tunnel\_command](#output\_tunnel\_command) | n/a |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- END_TF_DOCS -->
 <!-- markdownlint-enable no-inline-html no-bare-urls -->
